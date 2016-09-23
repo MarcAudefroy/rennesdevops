@@ -3,28 +3,24 @@
 	"ignore": "test",
 	"package": [
 		{
-			"checksumSHA1": "SIt1nDmxTb831cdF+UKseuS4AK4=",
-			"path": "github.com/briandowns/spinner",
-			"revision": "a00ac22c746220ee70a0891a0ec4aa6c56c6bb6a",
-			"revisionTime": "2016-07-18T20:30:27Z"
+			"checksumSHA1": "aIb20NobDZnQMGJzDAHh0fDuOEg=",
+			"origin": "github.com/ovh/tat/vendor/github.com/facebookgo/httpcontrol",
+			"path": "github.com/facebookgo/httpcontrol",
+			"revision": "81cea199fe3537186cfc616e5d4155b11425e3fd",
+			"revisionTime": "2016-09-22T12:04:02Z"
 		},
 		{
-			"checksumSHA1": "gkRIq2AsG0e/ngNfqW+IF/zr9o8=",
-			"path": "github.com/fatih/color",
-			"revision": "87d4004f2ab62d0d255e0a38f1680aa534549fe3",
-			"revisionTime": "2016-06-10T11:06:02Z"
+			"checksumSHA1": "klfNfdEPsrWYLps2qBkLgfJsNYI=",
+			"origin": "github.com/ovh/tat/vendor/github.com/gorilla/websocket",
+			"path": "github.com/gorilla/websocket",
+			"revision": "81cea199fe3537186cfc616e5d4155b11425e3fd",
+			"revisionTime": "2016-09-22T12:04:02Z"
 		},
 		{
-			"checksumSHA1": "ZAlzPBSsaGe/k5pbISRQvSiVhfc=",
-			"path": "github.com/mattn/go-colorable",
-			"revision": "ed8eb9e318d7a84ce5915b495b7d35e0cfe7b5a8",
-			"revisionTime": "2016-07-31T23:54:17Z"
-		},
-		{
-			"checksumSHA1": "xZuhljnmBysJPta/lMyYmJdujCg=",
-			"path": "github.com/mattn/go-isatty",
-			"revision": "66b8e73f3f5cda9f96b69efd03dd3d7fc4a5cdb8",
-			"revisionTime": "2016-08-06T12:27:52Z"
+			"checksumSHA1": "/x0czKHJkneLf0jC4CpPxy5uKYU=",
+			"path": "github.com/ovh/tat",
+			"revision": "81cea199fe3537186cfc616e5d4155b11425e3fd",
+			"revisionTime": "2016-09-22T12:04:02Z"
 		}
 	],
 	"rootPath": "github.com/marcaudefroy/rennesdevops"
