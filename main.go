@@ -1,11 +1,11 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 
 	"github.com/ovh/tat"
+	"github.com/spf13/viper"
 )
 
 // taturl, username / password of tat engine
@@ -22,10 +22,18 @@ Usage:
 */
 
 func main() {
-	flag.StringVar(&taturl, "url", "http://127.0.0.1:8080", "URL of Tat Engine")
-	flag.StringVar(&username, "username", "tat", "tat username")
-	flag.StringVar(&password, "password", "b43916450754f993ae2a180cf7748ccc509dc87e7d2008d6d7ff143404c274e013b92188a8da29626bd4a705fe7fe3a9a99eeaa3a5795c702c1ac549ef7c8132", "tat password")
-	flag.Parse()
+	viper.SetConfigName("config")
+	viper.AddConfigPath(".")
+	viper.SetConfigType("json")
+
+	err := viper.ReadInConfig()
+	if err != nil {
+		panic(fmt.Errorf("Fatal error config file: %s \n", err))
+	}
+
+	taturl = viper.GetString("taturl")
+	username = viper.GetString("username")
+	password = viper.GetString("password")
 
 	client, err := tat.NewClient(tat.Options{
 		URL:      taturl,
@@ -40,9 +48,11 @@ func main() {
 	}
 
 	stats, err := client.StatsInstance()
+
 	if err != nil {
 		fmt.Printf("Error:%s\n", err)
 		os.Exit(1)
 	}
 	fmt.Printf("instances: %s\n", stats)
+
 }
